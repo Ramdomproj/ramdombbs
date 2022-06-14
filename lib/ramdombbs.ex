@@ -1,6 +1,6 @@
-defmodule Ramdombbs do
+defmodule Randombbs do
   @moduledoc """
-  Documentation for `Ramdombbs`.
+  Documentation for `Randombbs`.
   """
 
   @doc """
@@ -8,7 +8,7 @@ defmodule Ramdombbs do
 
   ## Examples
 
-      iex> Ramdombbs.hello()
+      iex> Randombbs.hello()
       :world
 
   """

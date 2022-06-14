@@ -1,8 +1,8 @@
-defmodule RamdombbsTest do
+defmodule RandombbsTest do
   use ExUnit.Case
-  doctest Ramdombbs
+  doctest Randombbs
 
   test "greets the world" do
-    assert Ramdombbs.hello() == :world
+    assert Randombbs.hello() == :world
   end
 end

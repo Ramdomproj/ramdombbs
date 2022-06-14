@@ -1,9 +1,9 @@
-defmodule Ramdombbs.MixProject do
+defmodule Randombbs.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :ramdombbs,
+      app: :randombbs,
       version: "0.1.0",
       elixir: "~> 1.13",
       start_permanent: Mix.env() == :prod,
@@ -15,7 +15,7 @@ defmodule Ramdombbs.MixProject do
   def application do
     [
       extra_applications: [:logger],
-      mod: {Ramdombbs.Application, []}
+      mod: {Randombbs.Application, []}
     ]
   end
 
