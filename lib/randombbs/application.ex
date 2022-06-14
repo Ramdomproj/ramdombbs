@@ -9,7 +9,7 @@ defmodule Randombbs.Application do
     ]
     opts = [strategy: :one_for_one, name: Randombbs.Supervisor]
 
-    Logger.info("Starting application...")
+    Logger.info("Starting plug application...")
 
     Supervisor.start_link(children, opts)
   end
