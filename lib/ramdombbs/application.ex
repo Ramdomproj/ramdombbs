@@ -1,4 +1,4 @@
-defmodule Backend.Application do
+defmodule Ramdombbs.Application do
   # See https://hexdocs.pm/elixir/Application.html
   # for more information on OTP Applications
   @moduledoc false
@@ -8,13 +8,13 @@ defmodule Backend.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      # Starts a worker by calling: Backend.Worker.start_link(arg)
-      # {Backend.Worker, arg}
+      # Starts a worker by calling: Ramdombbs.Worker.start_link(arg)
+      # {Ramdombbs.Worker, arg}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
     # for other strategies and supported options
-    opts = [strategy: :one_for_one, name: Backend.Supervisor]
+    opts = [strategy: :one_for_one, name: Ramdombbs.Supervisor]
     Supervisor.start_link(children, opts)
   end
 end

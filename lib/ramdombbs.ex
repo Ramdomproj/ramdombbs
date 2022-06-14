@@ -1,6 +1,6 @@
-defmodule Backend do
+defmodule Ramdombbs do
   @moduledoc """
-  Documentation for `Backend`.
+  Documentation for `Ramdombbs`.
   """
 
   @doc """
@@ -8,7 +8,7 @@ defmodule Backend do
 
   ## Examples
 
-      iex> Backend.hello()
+      iex> Ramdombbs.hello()
       :world
 
   """
