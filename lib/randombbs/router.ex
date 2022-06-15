@@ -22,7 +22,7 @@ defmodule Randombbs.Router do
   end
 
   post "/signup" do
-    IO.inspect(conn)
+    IO.inspect(conn.body_params)
     send_resp(conn, 200, "sign up successful...才怪")
   end
 
