@@ -5,7 +5,7 @@ defmodule Randombbs.Router do
   plug Plug.Static,
     at: "/",
     from: "www",
-    only: ["user", "images", "assets", "home.html", "robots.txt"]
+    only: ["user", "assets", "robots.txt"]
 
   plug Plug.Parsers,
     parsers: [:urlencoded]
@@ -27,7 +27,7 @@ defmodule Randombbs.Router do
   end
 
   post "/login" do
-    IO.inspect(conn)
+    IO.inspect(conn.body_params)
     send_resp(conn, 200, "log in successful...才怪")
   end
 

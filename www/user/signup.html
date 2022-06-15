@@ -8,7 +8,7 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="renderer" content="webkit">
   <meta http-equiv="Cache-Control" content="no-siteapp" />
-  <link rel="alternate icon" type="image/png" href="../assets/i/favicon.png">
+  <link rel="alternate icon" type="image/png" href="../assets/images/favicon.png">
   <link rel="stylesheet" href="../assets/css/amazeui.min.css"/>
   <style>
     .header {
@@ -35,7 +35,7 @@
     <hr>
     <br>
 
-    <form action="/signup" method="post" class="am-form">
+    <form action="/signup" method="post" class="am-form" onsubmit="encrypt()">
       <label for="email">邮箱:</label>
       <input type="email" name="email" id="email" required>
       <br>
@@ -52,5 +52,12 @@
     <p>2022 Randomproj</p>
   </div>
 </div>
+<script src="../assets/js/sha256.js"></script>
+<script>
+  function encrypt() {
+        document.getElementById('password').value =
+          sha256(document.getElementById('password').value).toUpperCase()
+    }
+</script>
 </body>
 </html>
