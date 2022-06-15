@@ -1,12 +1,19 @@
 defmodule Randombbs.Router do
   use Plug.Router
 
+  plug Plug.Logger
+  plug Plug.Static,
+    at: "/",
+    from: "www",
+    only: ["user", "images", "js", "css", "home.html"]
+
+  plug(Plug.Parsers, parsers: [:urlencoded])
   plug :match
   plug :dispatch
 
   get "/" do
-    root_page = File.read!("www/index.html")
-    send_resp(conn, 200, root_page)
+    home_page = File.read!("www/home.html")
+    send_resp(conn, 200, home_page)
   end
 
   match _ do

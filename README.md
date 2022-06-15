@@ -19,3 +19,5 @@ Randombbs是一个论坛系统
 [elixir school](https://elixirschool.com/zh-hans/lessons/misc/plug)  
 [cowboy](https://ninenines.eu/)  
 [phoenix on bilibili](https://www.bilibili.com/video/BV1C54y1W78w)  
+### frontend
+[amaze ui](http://amazeui.shopxo.net/)
